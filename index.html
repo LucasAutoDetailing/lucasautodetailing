@@ -5,158 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; background: #000; color: #facc15; scroll-behavior: smooth; }
-
-    .hero { text-align: center; padding: 70px 20px; }
-    .hero h1 { font-size: 42px; margin-bottom: 10px; }
-    .hero p { color: #ddd; }
-
-    .button {
-      background: linear-gradient(45deg, #facc15, #eab308);
-      color: black;
-      padding: 14px 28px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 20px;
-      transition: 0.3s ease;
-    }
-    .button:hover { transform: scale(1.05); box-shadow: 0 0 15px #facc15; }
-
-    .section { padding: 50px 20px; max-width: 1100px; margin: auto; }
-
-    h2 { text-align: center; margin-bottom: 30px; }
-
-    .services, .pricing {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #111;
-      padding: 25px;
-      border-radius: 15px;
-      border: 1px solid #333;
-      transition: 0.3s;
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    .card.show { opacity: 1; transform: translateY(0); }
-
-    .card:hover { transform: translateY(-5px); border-color: #facc15; }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-
-    .about { text-align: center; color: #ddd; }
-    .about img { width: 160px; border-radius: 50%; margin-bottom: 15px; }
-
-    .footer { text-align: center; padding: 40px 20px; border-top: 1px solid #222; }
+    body{font-family:'Poppins',sans-serif;margin:0;background:#000;color:#facc15;}
+    .wrap{max-width:800px;margin:auto;padding:20px}
+    h1,h2{margin:10px 0;text-align:center}
+    p{color:#ddd;line-height:1.5}
+    .card{background:#111;border:1px solid #222;border-radius:12px;padding:18px;margin:15px 0}
+    .btn{display:block;text-align:center;margin:15px auto;padding:14px;border-radius:999px;background:linear-gradient(45deg,#facc15,#eab308);color:#000;font-weight:600;text-decoration:none;width:220px}
+    .headshot{width:120px;border-radius:50%;display:block;margin:10px auto}
+    ul{padding-left:18px;color:#ddd}
+    .small{font-size:14px;color:#aaa;text-align:center}
   </style>
 </head>
-
 <body>
 
-<div class="hero">
-  <h1>Luca's Auto Detailing</h1>
-  <p>Mobile Detailing in Cumming, GA</p>
-  <a class="button" href="tel:4704695519">Call Now</a>
+<div class="wrap">
+
+<h1>Luca's Auto Detailing</h1>
+<p style="text-align:center;">Mobile Detailing in Cumming, GA & surrounding areas</p>
+<a class="btn" href="tel:4704695519">Call / Text 470-469-5519</a>
+
+<div class="card">
+<h2>About</h2>
+<img class="headshot" src="https://media.discordapp.net/attachments/1000125018010824725/1489752794066980975/IMG_5836.jpg">
+<p>
+My name is Luca Palazzo, I’m 18 and the owner of Luca’s Auto Detailing. I provide high-quality mobile detailing services across Cumming, GA. I’m passionate about cars and take pride in delivering clean, detailed, and professional results every time.
+</p>
 </div>
 
-<div class="section">
-  <h2>Services</h2>
-  <div class="services">
-    <div class="card"> <h3>Exterior Detail</h3><p>Hand wash, foam bath, wax protection, wheels & tires cleaned</p></div>
-    <div class="card"> <h3>Interior Detail</h3><p>Deep vacuum, shampoo, wipe down, odor removal</p></div>
-    <div class="card"> <h3>Full Detail</h3><p>Complete inside & out restoration for a like-new finish</p></div>
-  </div>
+<div class="card">
+<h2>Services & Pricing</h2>
+
+<h3>Interior Detail — Starting at $120</h3>
+<ul>
+<li>Full vacuum (seats, carpets, trunk)</li>
+<li>Carpets & seats deep cleaned</li>
+<li>All interior surfaces cleaned</li>
+<li>Vents, cupholders, cracks detailed</li>
+<li>Floor mats cleaned</li>
+<li>Door jambs cleaned</li>
+<li>Interior windows cleaned</li>
+<li>Natural finish protection</li>
+</ul>
+
+<h3>Exterior Detail — Starting at $80</h3>
+<ul>
+<li>Foam pre-wash & hand wash</li>
+<li>Wheels cleaned</li>
+<li>Tires dressed</li>
+<li>Exterior windows cleaned</li>
+<li>Paint protection applied</li>
+</ul>
+
+<h3>Full Detail — Starting at $160</h3>
+<ul>
+<li>Interior + Exterior Detail</li>
+<li>Complete inside & out reset</li>
+</ul>
+
+<h3>Decontamination (Premium) — Starting at $200</h3>
+<ul>
+<li>Everything in Full Detail</li>
+<li>Iron decontamination</li>
+<li>Clay towel treatment</li>
+<li>Water spot removal</li>
+<li>Upgraded paint protection</li>
+</ul>
+
+<h3>Maintenance — Starting at $60</h3>
+<ul>
+<li>Exterior wash</li>
+<li>Light interior vacuum</li>
+<li>Surface wipe down</li>
+<li>Windows cleaned</li>
+<li>Tires dressed</li>
+</ul>
+
+<p class="small">Add-ons: Pet hair ($20–40) • Stains ($30–60) • Engine bay ($25)</p>
 </div>
 
-<div class="section">
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/400" />
-    <img src="https://via.placeholder.com/400" />
-    <img src="https://via.placeholder.com/400" />
-    <img src="https://via.placeholder.com/400" />
-    <img src="https://via.placeholder.com/400" />
-    <img src="https://via.placeholder.com/400" />
-  </div>
-  <div style="text-align:center;">
-    <a class="button" href="https://instagram.com/detailbyluca" target="_blank">View Instagram</a>
-  </div>
+<div class="card">
+<h2>Service Areas</h2>
+<p style="text-align:center;">Cumming, GA • Alpharetta • Buford • Suwanee • surrounding areas</p>
 </div>
 
-<div class="section">
-  <h2>Pricing</h2>
-  <div class="pricing">
-    <div class="card">
-      <h3>Exterior</h3>
-      <p>$80+</p>
-      <ul>
-        <li>Foam wash</li>
-        <li>Hand dry</li>
-        <li>Wheel cleaning</li>
-        <li>Tire shine</li>
-      </ul>
-    </div>
+<a class="btn" href="tel:4704695519">Book Now</a>
+<p class="small">Locally owned & operated</p>
 
-    <div class="card">
-      <h3>Interior</h3>
-      <p>$120+</p>
-      <ul>
-        <li>Vacuum</li>
-        <li>Shampoo seats</li>
-        <li>Interior wipe</li>
-        <li>Odor removal</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Full Detail</h3>
-      <p>$180+</p>
-      <ul>
-        <li>Full interior + exterior</li>
-        <li>Wax protection</li>
-        <li>Deep cleaning</li>
-      </ul>
-    </div>
-  </div>
 </div>
-
-<div class="section about">
-  <h2>Meet the Owner</h2>
-  <img src="YOUR_HEADSHOT_IMAGE_LINK_HERE" />
-  <p>Luca Palazzo – Owner & Operator. Passionate about detailing and delivering high-quality results directly to your driveway.</p>
-</div>
-
-<div class="footer">
-  <h2>Book Now</h2>
-  <p>470-469-5519</p>
-</div>
-
-<script>
-  const cards = document.querySelectorAll('.card');
-  window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-      const top = card.getBoundingClientRect().top;
-      if(top < window.innerHeight - 50){ card.classList.add('show'); }
-    });
-  });
-</script>
 
 </body>
 </html>

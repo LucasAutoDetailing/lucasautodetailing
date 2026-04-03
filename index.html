@@ -5,15 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body{font-family:'Poppins',sans-serif;margin:0;background:#000;color:#facc15;}
-    .wrap{max-width:800px;margin:auto;padding:20px}
-    h1,h2{margin:10px 0;text-align:center}
-    p{color:#ddd;line-height:1.5}
-    .card{background:#111;border:1px solid #222;border-radius:12px;padding:18px;margin:15px 0}
-    .btn{display:block;text-align:center;margin:15px auto;padding:14px;border-radius:999px;background:linear-gradient(45deg,#facc15,#eab308);color:#000;font-weight:600;text-decoration:none;width:220px}
-    .headshot{width:120px;border-radius:50%;display:block;margin:10px auto}
-    ul{padding-left:18px;color:#ddd}
-    .small{font-size:14px;color:#aaa;text-align:center}
+    body{
+      font-family:'Poppins',sans-serif;
+      margin:0;
+      background: linear-gradient(135deg, #000000, #111827, #1f2937);
+      color:#facc15;
+    }
+
+    .wrap{max-width:800px;margin:auto;padding:25px}
+
+    h1{font-size:34px;text-align:center;margin-bottom:5px}
+    h2{text-align:center;margin:10px 0}
+    h3{margin-top:20px}
+
+    p{color:#e5e7eb;line-height:1.5}
+
+    .card{
+      background: linear-gradient(145deg, #111, #1f2937);
+      border:1px solid #2d3748;
+      border-radius:14px;
+      padding:20px;
+      margin:18px 0;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .btn{
+      display:block;
+      text-align:center;
+      margin:20px auto;
+      padding:15px;
+      border-radius:999px;
+      background: linear-gradient(45deg,#facc15,#eab308);
+      color:#000;
+      font-weight:600;
+      text-decoration:none;
+      width:240px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 20px #facc15;
+    }
+
+    .headshot{
+      width:130px;
+      border-radius:50%;
+      display:block;
+      margin:15px auto;
+      border:2px solid #facc15;
+    }
+
+    ul{padding-left:18px;color:#d1d5db}
+
+    .small{
+      font-size:13px;
+      color:#9ca3af;
+      text-align:center;
+    }
+
+    .divider{
+      height:1px;
+      background:linear-gradient(to right, transparent, #facc15, transparent);
+      margin:25px 0;
+    }
+
   </style>
 </head>
 <body>
@@ -22,15 +78,18 @@
 
 <h1>Luca's Auto Detailing</h1>
 <p style="text-align:center;">Mobile Detailing in Cumming, GA & surrounding areas</p>
+
 <a class="btn" href="tel:4704695519">Call / Text 470-469-5519</a>
 
 <div class="card">
 <h2>About</h2>
 <img class="headshot" src="https://media.discordapp.net/attachments/1000125018010824725/1489752794066980975/IMG_5836.jpg">
 <p>
-My name is Luca Palazzo, I’m 18 and the owner of Luca’s Auto Detailing. I provide high-quality mobile detailing services across Cumming, GA. I’m passionate about cars and take pride in delivering clean, detailed, and professional results every time.
+My name is Luca Palazzo, I’m 18 and the owner of Luca’s Auto Detailing. I specialize in high-quality mobile detailing services across Cumming, GA and surrounding areas. I’m passionate about cars and take pride in delivering clean, detailed, and professional results every time.
 </p>
 </div>
+
+<div class="divider"></div>
 
 <div class="card">
 <h2>Services & Pricing</h2>
@@ -83,9 +142,11 @@ My name is Luca Palazzo, I’m 18 and the owner of Luca’s Auto Detailing. I pr
 <p class="small">Add-ons: Pet hair ($20–40) • Stains ($30–60) • Engine bay ($25)</p>
 </div>
 
+<div class="divider"></div>
+
 <div class="card">
 <h2>Service Areas</h2>
-<p style="text-align:center;">Cumming, GA • Alpharetta • Buford • Suwanee • surrounding areas</p>
+<p style="text-align:center;">Cumming • Alpharetta • Buford • Suwanee • surrounding areas</p>
 </div>
 
 <a class="btn" href="tel:4704695519">Book Now</a>

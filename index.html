@@ -3,23 +3,68 @@
 <head>
   <title>Luca's Auto Detailing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; background: #0f172a; color: white; }
-    .hero { background: linear-gradient(to right, #000000, #1e293b); padding: 80px 20px; text-align: center; }
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #000; color: #facc15; scroll-behavior: smooth; }
+
+    .hero { text-align: center; padding: 70px 20px; }
     .hero h1 { font-size: 42px; margin-bottom: 10px; }
-    .hero p { font-size: 18px; color: #cbd5f5; }
-    .button { background: #22c55e; color: black; padding: 15px 30px; text-decoration: none; border-radius: 10px; font-weight: 600; display: inline-block; margin-top: 20px; }
-    .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: #1e293b; padding: 25px; border-radius: 15px; transition: 0.3s; }
-    .card:hover { transform: translateY(-5px); background: #334155; }
+    .hero p { color: #ddd; }
+
+    .button {
+      background: linear-gradient(45deg, #facc15, #eab308);
+      color: black;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 20px;
+      transition: 0.3s ease;
+    }
+    .button:hover { transform: scale(1.05); box-shadow: 0 0 15px #facc15; }
+
+    .section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+
     h2 { text-align: center; margin-bottom: 30px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-    .gallery img { width: 100%; border-radius: 12px; }
-    .about { text-align: center; color: #cbd5f5; line-height: 1.6; }
-    .about img { width: 180px; border-radius: 50%; margin-bottom: 20px; }
-    .footer { background: black; text-align: center; padding: 40px 20px; }
+
+    .services, .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #333;
+      transition: 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .card.show { opacity: 1; transform: translateY(0); }
+
+    .card:hover { transform: translateY(-5px); border-color: #facc15; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .about { text-align: center; color: #ddd; }
+    .about img { width: 160px; border-radius: 50%; margin-bottom: 15px; }
+
+    .footer { text-align: center; padding: 40px 20px; border-top: 1px solid #222; }
   </style>
 </head>
 
@@ -27,59 +72,91 @@
 
 <div class="hero">
   <h1>Luca's Auto Detailing</h1>
-  <p>Mobile Detailing in Cumming, GA & Surrounding Areas</p>
-  <a class="button" href="tel:4704695519">Call Now: 470-469-5519</a>
+  <p>Mobile Detailing in Cumming, GA</p>
+  <a class="button" href="tel:4704695519">Call Now</a>
 </div>
 
 <div class="section">
-  <h2>Our Services</h2>
+  <h2>Services</h2>
   <div class="services">
-    <div class="card"><h3>Exterior Detail</h3><p>Hand wash, wax protection, wheels cleaned, tire shine</p></div>
-    <div class="card"><h3>Interior Detail</h3><p>Deep vacuum, stain removal, interior wipe-down, odor treatment</p></div>
-    <div class="card"><h3>Full Detail</h3><p>Complete inside & out detail for a like-new finish</p></div>
+    <div class="card"> <h3>Exterior Detail</h3><p>Hand wash, foam bath, wax protection, wheels & tires cleaned</p></div>
+    <div class="card"> <h3>Interior Detail</h3><p>Deep vacuum, shampoo, wipe down, odor removal</p></div>
+    <div class="card"> <h3>Full Detail</h3><p>Complete inside & out restoration for a like-new finish</p></div>
   </div>
 </div>
 
 <div class="section">
   <h2>Our Work</h2>
   <div class="gallery">
-    <img src="https://media.discordapp.net/attachments/1000125018010824725/1489751241473921094/B9FD525E-6E01-4897-B99A-7C5DE6220028.jpg?ex=69d18e76&is=69d03cf6&hm=2ea3eb4aa801baf1f56d4c1b3c18b5cc8a6a6588e843164beb33b4097489b8e9&=&format=webp&width=720&height=960" />
-    <img src="https://media.discordapp.net/attachments/1000125018010824725/1489753758148722819/image0.jpg?ex=69d190ce&is=69d03f4e&hm=4e289013e62d2868cdd6e3d2ef9156246c588755df6d22f3cf3532763c1db6e7&=&format=webp&width=444&height=960" />
-    <img src="https://cdn.discordapp.com/attachments/1000125018010824725/1489751808195694812/IMG_5749.jpg?ex=69d18efd&is=69d03d7d&hm=4760189334640371ea7b29dad6969418988f9b43ed1409332241071f4ecbfb06&" />
-    <img src="https://media.discordapp.net/attachments/1000125018010824725/1489751808510394388/IMG_5678.jpg?ex=69d18efd&is=69d03d7d&hm=a5166ff1bd2fa13045fa934134647f608cbee6ff30d7a48b0b09609a0753a254&=&format=webp&width=642&height=856" />
+    <img src="https://via.placeholder.com/400" />
+    <img src="https://via.placeholder.com/400" />
+    <img src="https://via.placeholder.com/400" />
+    <img src="https://via.placeholder.com/400" />
+    <img src="https://via.placeholder.com/400" />
+    <img src="https://via.placeholder.com/400" />
   </div>
   <div style="text-align:center;">
-    <a class="button" href="https://instagram.com/detailbyluca" target="_blank">View More on Instagram</a>
+    <a class="button" href="https://instagram.com/detailbyluca" target="_blank">View Instagram</a>
   </div>
 </div>
 
 <div class="section">
   <h2>Pricing</h2>
-  <p style="text-align:center;">Exterior – $80+<br>Interior – $120+<br>Full Detail – $180+</p>
+  <div class="pricing">
+    <div class="card">
+      <h3>Exterior</h3>
+      <p>$80+</p>
+      <ul>
+        <li>Foam wash</li>
+        <li>Hand dry</li>
+        <li>Wheel cleaning</li>
+        <li>Tire shine</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Interior</h3>
+      <p>$120+</p>
+      <ul>
+        <li>Vacuum</li>
+        <li>Shampoo seats</li>
+        <li>Interior wipe</li>
+        <li>Odor removal</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Full Detail</h3>
+      <p>$180+</p>
+      <ul>
+        <li>Full interior + exterior</li>
+        <li>Wax protection</li>
+        <li>Deep cleaning</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <div class="section about">
   <h2>Meet the Owner</h2>
-  <img src="https://media.discordapp.net/attachments/1000125018010824725/1489752794066980975/IMG_5836.jpg?ex=69d18fe8&is=69d03e68&hm=a829bdc11735a0e71c9b3f83adbc0d47f599305f20232cc030bb4106b3ac5f72&=&format=webp&width=640&height=960" alt="Luca Palazzo">
-  <p>
-    My name is Luca Palazzo, and I’m the owner of Luca’s Auto Detailing. At 18 years old, I’ve built this business from the ground up with a strong passion for cars and an obsession with detail.
-  </p>
-  <p>
-    What started as a simple interest quickly turned into something bigger — I take pride in transforming vehicles and making them look better than new. Every job I take on is treated with care, precision, and attention to detail, no matter the size.
-  </p>
-  <p>
-    I believe in quality work, honesty, and making sure every customer is 100% satisfied. When you book with me, you’re not just getting a basic wash — you’re getting someone who genuinely cares about the result and your experience.
-  </p>
-  <p>
-    I offer fully mobile detailing services across Cumming, GA and surrounding areas, bringing professional-level results directly to your driveway.
-  </p>
+  <img src="YOUR_HEADSHOT_IMAGE_LINK_HERE" />
+  <p>Luca Palazzo – Owner & Operator. Passionate about detailing and delivering high-quality results directly to your driveway.</p>
 </div>
 
 <div class="footer">
-  <h2>Book Your Detail Today</h2>
-  <p>Call or Text: 470-469-5519</p>
-  <p>Cumming, GA & Surrounding Areas</p>
+  <h2>Book Now</h2>
+  <p>470-469-5519</p>
 </div>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+      const top = card.getBoundingClientRect().top;
+      if(top < window.innerHeight - 50){ card.classList.add('show'); }
+    });
+  });
+</script>
 
 </body>
 </html>
